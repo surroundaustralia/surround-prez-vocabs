@@ -1,0 +1,1952 @@
+PREFIX cs: <http://resource.geosciml.org/vocabulary/timescale/skos-demo>
+PREFIX isc: <http://resource.geosciml.org/classifier/ics/ischart/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ts: <http://resource.geosciml.org/vocabulary/timescale/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+cs:
+    a skos:ConceptScheme ;
+    skos:prefLabel "Geologic Time Scale (2020)"@en ;
+    skos:definition "SKOS representation of the Geologic Time Scale, as defined in the International Chronostratigraphic Chart (ICC) from the International Commission on Stratigraphy (ICS). The ICC embraces both chronostratigraphic (time-rock) units and their equivalent geochronologic (geologic-time) units, the former being related to the ‘Stratigraphic points’ referred to below, and the latter (geochronologic units) being employed in this SKOS representation."@en ;
+    dcterms:source "https://stratigraphy.org/chart"^^xsd:anyURI ;
+    dcterms:rights "Original version Copyright © 2020 International Commission on Stratigraphy"@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2020-06-05"^^xsd:date ;
+    dcterms:modified "2022-02-25"^^xsd:date ;
+    dcterms:issued "2022-02-25"^^xsd:date ;
+    skos:hasTopConcept 
+        isc:Phanerozoic ,
+        isc:Precambrian ;
+.
+
+isc:Archean
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Precambrian ;
+    skos:definition "A time period with the following approximated bounds: older bound -4000 Ma, younger bound -2500 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Eoarchean ,
+        isc:Mesoarchean ,
+        isc:Neoarchean ,
+        isc:Paleoarchean ;
+    skos:prefLabel
+        "прхай"@bg ,
+        "Archaikum"@cs ,
+        "Arkæisk"@da ,
+        "Archaikum"@de ,
+        "Archean"@en ,
+        "Archaean"@en-gb ,
+        "Archean"@en-us ,
+        "Arcaico"@es ,
+        "Arhaikum"@et ,
+        "Arkeikum"@fi ,
+        "Archéen"@fr ,
+        "archaikum"@hu ,
+        "archeano"@it ,
+        "始生代"@ja ,
+        "Archejus"@lt ,
+        "Archaïcum"@nl ,
+        "Arkeikum"@no ,
+        "Archaik"@pl ,
+        "Arcaico"@pt ,
+        "archaikum, prahory"@sk ,
+        "arhaik"@sl ,
+        "arkeikum"@sv ,
+        "太古宙"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:CambrianSeries2
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cambrian ;
+    skos:definition "A time period with the following approximated bounds: older bound -521 Ma, younger bound -509 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:CambrianStage3 ,
+        isc:CambrianStage4 ;
+    skos:prefLabel
+        "Камбрий - 2 ѿериѿ"@bg ,
+        "Kambrium-Oddělení 2"@cs ,
+        "Kambrium-Serie 2"@da ,
+        "Kambrium-Serie 2"@de ,
+        "Cambrian Series 2"@en ,
+        "Cámbrico-Serie 2"@es ,
+        "Kambrium, Ladestik 2"@et ,
+        "Kambri-sarja 2"@fi ,
+        "Cambrien-Séries 2"@fr ,
+        "kambrium 2. sorozat"@hu ,
+        "cambriano - serie 2"@it ,
+        "第2世"@ja ,
+        "Kambras-Serija 2"@lt ,
+        "Cambrium, Zone 2"@nl ,
+        "Kambrium -serie 2"@no ,
+        "Kambr-Oddział 2"@pl ,
+        "Câmbrico-Série 2"@pt ,
+        "kambrium - séria 2"@sk ,
+        "kambrij-serija 2"@sl ,
+        "kambrium serie 2"@sv ,
+        "第二世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Cisuralian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Permian ;
+    skos:definition "A time period with the following approximated bounds: older bound -298.9 +|-0.15 Ma, younger bound -272.95 +|-0.11 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Artinskian ,
+        isc:Asselian ,
+        isc:Kungurian ,
+        isc:Sakmarian ;
+    skos:prefLabel
+        "Циѿурал"@bg ,
+        "Cisural"@cs ,
+        "Cisuralien"@da ,
+        "Cisuralium"@de ,
+        "Cisuralian"@en ,
+        "Cisuraliense"@es ,
+        "Cisural"@et ,
+        "Cisural"@fi ,
+        "Cisuralien"@fr ,
+        "ciszurali"@hu ,
+        "cisuraliano"@it ,
+        "キスラリアン世"@ja ,
+        "Kisuralis"@lt ,
+        "Cisuraliën"@nl ,
+        "Cisuralium"@no ,
+        "Cisural"@pl ,
+        "Cisuraliano"@pt ,
+        "cisural"@sk ,
+        "cisuralij"@sl ,
+        "cisural"@sv ,
+        "乌拉尔世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Eocene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleogene ;
+    skos:definition "A time period with the following approximated bounds: older bound -56 Ma, younger bound -33.9 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Bartonian ,
+        isc:Lutetian ,
+        isc:Priabonian ,
+        isc:Ypresian ;
+    skos:prefLabel
+        "Еоцен"@bg ,
+        "Eocén"@cs ,
+        "Eocæn"@da ,
+        "Eozän"@de ,
+        "Eocene"@en ,
+        "Eoceno"@es ,
+        "Eotseen"@et ,
+        "Eoseeni"@fi ,
+        "Eocène"@fr ,
+        "eocén"@hu ,
+        "eocene"@it ,
+        "始新世"@ja ,
+        "Eocenas"@lt ,
+        "Eoceen"@nl ,
+        "Eocen"@no ,
+        "Eocen"@pl ,
+        "Eocénico"@pt ,
+        "eocén"@sk ,
+        "eocen"@sl ,
+        "eocen"@sv ,
+        "始新世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Furongian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cambrian ;
+    skos:definition "A time period with the following approximated bounds: older bound -497 Ma, younger bound -485.4 +|-1.9 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:CambrianStage10 ,
+        isc:Jiangshanian ,
+        isc:Paibian ;
+    skos:prefLabel
+        "Фуронг"@bg ,
+        "Furong"@cs ,
+        "Furongien"@da ,
+        "Furongium"@de ,
+        "Furongian"@en ,
+        "Furogiense"@es ,
+        "Furong"@et ,
+        "Furong"@fi ,
+        "Furongien"@fr ,
+        "furongi"@hu ,
+        "furongiano"@it ,
+        "フロンギアン世"@ja ,
+        "Furongis"@lt ,
+        "Furongiën"@nl ,
+        "Furongium"@no ,
+        "Furong"@pl ,
+        "Furongiano"@pt ,
+        "furong"@sk ,
+        "furongij"@sl ,
+        "furong"@sv ,
+        "芙蓉世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Guadalupian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Permian ;
+    skos:definition "A time period with the following approximated bounds: older bound -272.95 +|-0.11 Ma, younger bound -259.1 +|-0.5 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Capitanian ,
+        isc:Roadian ,
+        isc:Wordian ;
+    skos:prefLabel
+        "Гуадалуп"@bg ,
+        "Guadalup"@cs ,
+        "Guadalupien"@da ,
+        "Guadalupium"@de ,
+        "Guadalupian"@en ,
+        "Guadalupiense"@es ,
+        "Guadalup"@et ,
+        "Guadalup"@fi ,
+        "Guadalupéen"@fr ,
+        "guadalupei"@hu ,
+        "guadalupiano"@it ,
+        "ガダリューピアン世"@ja ,
+        "Gvadalupis"@lt ,
+        "Guadalupiën"@nl ,
+        "Guadalupium"@no ,
+        "Gwadelup"@pl ,
+        "Guadalupiano"@pt ,
+        "guadalup"@sk ,
+        "guadalupij"@sl ,
+        "guadalup"@sv ,
+        "瓜德鲁普世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Holocene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Quaternary ;
+    skos:definition "A time period with the following approximated bounds: older bound -0.0117 Ma, younger bound -0.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Greenlandian ,
+        isc:Meghalayan ,
+        isc:Northgrippian ;
+    skos:prefLabel
+        "Холоцен"@bg ,
+        "Holocén"@cs ,
+        "Holocæn"@da ,
+        "Holozän"@de ,
+        "Holocene"@en ,
+        "Holoceno"@es ,
+        "Holotseen"@et ,
+        "Holoseeni"@fi ,
+        "Holocène"@fr ,
+        "holocén"@hu ,
+        "olocene"@it ,
+        "完新世"@ja ,
+        "Holocenas"@lt ,
+        "Holoceen"@nl ,
+        "Holocen"@no ,
+        "Holocen"@pl ,
+        "Holocénico"@pt ,
+        "holocén"@sk ,
+        "holocen"@sl ,
+        "holocen"@sv ,
+        "全新世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Llandovery
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Silurian ;
+    skos:definition "A time period with the following approximated bounds: older bound -443.8 +|-1.5 Ma, younger bound -433.4 +|-0.8 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Aeronian ,
+        isc:Rhuddanian ,
+        isc:Telychian ;
+    skos:prefLabel
+        "Лиандовери"@bg ,
+        "Llandovery"@cs ,
+        "Llandovery"@da ,
+        "Llandovery"@de ,
+        "Llandovery"@en ,
+        "Llandovery"@es ,
+        "Llandovery"@et ,
+        "Llandovery"@fi ,
+        "Llandovery"@fr ,
+        "llandoveryi"@hu ,
+        "llandovery"@it ,
+        "ランドベリアン世"@ja ,
+        "Landoveris"@lt ,
+        "Llandovery"@nl ,
+        "Llandovery"@no ,
+        "Landower"@pl ,
+        "Llandovery"@pt ,
+        "llandover"@sk ,
+        "llandoverij"@sl ,
+        "llandovery"@sv ,
+        "兰多维列世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Lopingian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Permian ;
+    skos:definition "A time period with the following approximated bounds: older bound -259.1 +|-0.5 Ma, younger bound -251.902 +|-0.024 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Changhsingian ,
+        isc:Wuchiapingian ;
+    skos:prefLabel
+        "Лопинг"@bg ,
+        "Loping"@cs ,
+        "Lopingien"@da ,
+        "Lopingium"@de ,
+        "Lopingian"@en ,
+        "Lopingiense"@es ,
+        "Loping"@et ,
+        "Loping"@fi ,
+        "Lopingien"@fr ,
+        "lopingi"@hu ,
+        "lopingiano"@it ,
+        "ロピンギアン世"@ja ,
+        "Lopingis"@lt ,
+        "Lopingiën"@nl ,
+        "Lopingium"@no ,
+        "Loping"@pl ,
+        "Lopingiano"@pt ,
+        "loping"@sk ,
+        "lopingij"@sl ,
+        "loping"@sv ,
+        "乐平世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:LowerCretaceous
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cretaceous ;
+    skos:definition "A time period with the following approximated bounds: older bound -145.0 Ma, younger bound -100.5 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Albian ,
+        isc:Aptian ,
+        isc:Barremian ,
+        isc:Berriasian ,
+        isc:Hauterivian ,
+        isc:Valanginian ;
+    skos:prefLabel
+        "Ранна Креда"@bg ,
+        "Tidlig Kridt"@da ,
+        "Frühe Kreide"@de ,
+        "Early Cretaceous"@en ,
+        "Cretácico temprano"@es ,
+        "Varajane kriit"@et ,
+        "Varhais-Liitu"@fi ,
+        "Crétacé précoce"@fr ,
+        "kora-kréta"@hu ,
+        "Cretaceo precoce"@it ,
+        "白亜紀前期"@ja ,
+        "Ankstyvoji Kreida"@lt ,
+        "Vroeg Krijt"@nl ,
+        "Wczesna Kreda"@pl ,
+        "Cretáceo Primitivo"@pt ,
+        "raná  krieda"@sk ,
+        "zgodnja kreda"@sl ,
+        "äldre krita"@sv ,
+        "早白垩世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:LowerDevonian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Devonian ;
+    skos:definition "A time period with the following approximated bounds: older bound -419.2 +|-3.2 Ma, younger bound -393.3 +|-1.2 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Emsian ,
+        isc:Lochkovian ,
+        isc:Pragian ;
+    skos:prefLabel
+        "Ранен Девон"@bg ,
+        "brzy devon"@cs ,
+        "Tidlig Devon"@da ,
+        "Frühes Devon"@de ,
+        "Early Devonian"@en ,
+        "Devónico temprano"@es ,
+        "Vara-Devon"@et ,
+        "Varhais-Devoni"@fi ,
+        "Dévonien précoce"@fr ,
+        "kora-devon"@hu ,
+        "devoniano precoce"@it ,
+        "デボン紀前期"@ja ,
+        "Ankstyvasis Devonas"@lt ,
+        "Vroeg Devoon"@nl ,
+        "Tidlig devon"@no ,
+        "Wczesny Dewon"@pl ,
+        "Devoniano primitivo"@pt ,
+        "raný devón"@sk ,
+        "zgodnji devon"@sl ,
+        "äldre devon"@sv ,
+        "早泥盆世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:LowerJurassic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Jurassic ;
+    skos:definition "A time period with the following approximated bounds: older bound -201.3 +|-0.2 Ma, younger bound -174.1 +|-1.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Hettangian ,
+        isc:Pliensbachian ,
+        isc:Sinemurian ,
+        isc:Toarcian ;
+    skos:prefLabel
+        "Ранна Юра"@bg ,
+        "brzy jura"@cs ,
+        "Tidlig Jurassisk"@da ,
+        "Früher Jura"@de ,
+        "Early Jurassic"@en ,
+        "Jurásico temprano"@es ,
+        "Vara-Juura"@et ,
+        "Varhais-Jura"@fi ,
+        "Jurassique précoce"@fr ,
+        "kora-jura"@hu ,
+        "giurassico precoce"@it ,
+        "ジュラ紀前期"@ja ,
+        "Ankstyvoji Jura"@lt ,
+        "Vroeg Jura"@nl ,
+        "Tidlig jura"@no ,
+        "Wczesna Jura"@pl ,
+        "Jurássico primitivo"@pt ,
+        "raná jura"@sk ,
+        "zgodnja jura"@sl ,
+        "äldre jura"@sv ,
+        "早侏罗世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:LowerMississippian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Mississippian ;
+    skos:definition "A time period with the following approximated bounds: older bound -358.9 +|-0.4 Ma, younger bound -346.7 +|-0.4 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower isc:Tournaisian ;
+    skos:prefLabel
+        "Early Mississippian"@en ,
+        "前期ミシシッピアン紀"@ja ,
+        "早密西西比世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:LowerOrdovician
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Ordovician ;
+    skos:definition "A time period with the following approximated bounds: older bound -485.4 +|-1.9 Ma, younger bound -470.0 +|-1.4 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Floian ,
+        isc:Tremadocian ;
+    skos:prefLabel
+        "Ранен Ордовик"@bg ,
+        "brzy ordovik"@cs ,
+        "Tidlig Ordovicium"@da ,
+        "Fühes Ordovizium"@de ,
+        "Early Ordovician"@en ,
+        "Ordovícico temprano"@es ,
+        "Vara-Ordoviitsium"@et ,
+        "Varhais-Ordoviikki"@fi ,
+        "Ordovicien précoce"@fr ,
+        "kora-ordovícium"@hu ,
+        "ordoviciano precoce"@it ,
+        "オルドビス紀前期"@ja ,
+        "Ankstyvasis Ordovikas"@lt ,
+        "Vroeg Ordovicium"@nl ,
+        "Tidlig ordovicium"@no ,
+        "Wczesny Ordowik"@pl ,
+        "Ordovícista adiantado"@pt ,
+        "raný ordovik"@sk ,
+        "zgodnji ordovicij"@sl ,
+        "äldre ordovicium"@sv ,
+        "早奥陶世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:LowerPennsylvanian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Pennsylvanian ;
+    skos:definition "A time period with the following approximated bounds: older bound -323.2 +|-0.4 Ma, younger bound -315.2 +|-0.2 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower isc:Bashkirian ;
+    skos:prefLabel
+        "Early Pennsylvanian"@en ,
+        "前期ペンシルバニア紀"@ja ,
+        "早宾夕法尼亚世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:LowerTriassic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Triassic ;
+    skos:definition "A time period with the following approximated bounds: older bound -251.902 +|-0.024 Ma, younger bound -247.2 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Induan ,
+        isc:Olenekian ;
+    skos:prefLabel
+        "Раннен Триаѿ"@bg ,
+        "brzy trias"@cs ,
+        "Tidlig Triassisk"@da ,
+        "Frühe Trias (Buntsandstein)"@de ,
+        "Early Triassic"@en ,
+        "Triásico temprano"@es ,
+        "Vara-Triias"@et ,
+        "Varhais-Trias"@fi ,
+        "Trias précoce"@fr ,
+        "kora-triász"@hu ,
+        "triassico precoce"@it ,
+        "三畳紀前期"@ja ,
+        "Ankstyvasis Triasas"@lt ,
+        "Vroeg Trias"@nl ,
+        "Tidlig trias"@no ,
+        "Wczesny Trias"@pl ,
+        "Triássico primitivo"@pt ,
+        "raný trias"@sk ,
+        "zgodnji trias"@sl ,
+        "äldre trias"@sv ,
+        "早三叠世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Ludlow
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Silurian ;
+    skos:definition "A time period with the following approximated bounds: older bound -427.4 +|-0.5 Ma, younger bound -423 +|-2.3 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Gorstian ,
+        isc:Ludfordian ;
+    skos:prefLabel
+        "Лудлоу"@bg ,
+        "Ludlow"@cs ,
+        "Ludlow"@da ,
+        "Ludlow"@de ,
+        "Ludlow"@en ,
+        "Ludlow"@es ,
+        "Ludlow"@et ,
+        "Ludlow"@fi ,
+        "Ludlow"@fr ,
+        "ludlowi"@hu ,
+        "ludlow"@it ,
+        "ルーロビアン世"@ja ,
+        "Ludlovis"@lt ,
+        "Ludlow"@nl ,
+        "Ludlow"@no ,
+        "Ludlow"@pl ,
+        "Ludlow"@pt ,
+        "ludlow"@sk ,
+        "ludlowij"@sl ,
+        "ludlow"@sv ,
+        "卢德洛世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Mesoproterozoic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Proterozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -1600 Ma, younger bound -1000 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Calymmian ,
+        isc:Ectasian ,
+        isc:Stenian ;
+    skos:prefLabel
+        "Мезопротерозой"@bg ,
+        "Mezoproterozoikum"@cs ,
+        "Mesoproterozoisk"@da ,
+        "Mesoproterozoikum"@de ,
+        "Mesoproterozoic"@en ,
+        "Mesoproterozoico"@es ,
+        "Mesoproterosoikum"@et ,
+        "Mesoproterotsoikum"@fi ,
+        "Mésoprotérozoïque"@fr ,
+        "mezoproterozoikum"@hu ,
+        "mesoproterozoico"@it ,
+        "原生代中期"@ja ,
+        "Mezoproterozojus"@lt ,
+        "Mesoproterozoïcum"@nl ,
+        "Mesoproterozoikum"@no ,
+        "Mezoproterozoik"@pl ,
+        "Mesoproterozóico"@pt ,
+        "mezoproterozoikum"@sk ,
+        "mezoproterozoik"@sl ,
+        "mesoproterozoikum"@sv ,
+        "中元古代"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Miaolingian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cambrian ;
+    skos:definition "A time period with the following approximated bounds: older bound -509 Ma, younger bound -497 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Drumian ,
+        isc:Guzhangian ,
+        isc:Wuliuan ;
+    skos:prefLabel "Miaolingian"@en ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:MiddleDevonian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Devonian ;
+    skos:definition "A time period with the following approximated bounds: older bound -393.3 +|-1.2 Ma, younger bound -382.7 +|-1.6 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Eifelian ,
+        isc:Givetian ;
+    skos:prefLabel
+        "Среден Девон"@bg ,
+        "Střední devon"@cs ,
+        "Mellem Devon"@da ,
+        "Mitteldevon"@de ,
+        "Middle Devonian"@en ,
+        "Devónico Medio"@es ,
+        "Kesk-Devon"@et ,
+        "Keski-Devoni"@fi ,
+        "Dévonien moyen"@fr ,
+        "középső-devon"@hu ,
+        "devoniano medio"@it ,
+        "中期デボン紀"@ja ,
+        "Vidurinis Devonas"@lt ,
+        "Midden Devoon"@nl ,
+        "Midtre devon"@no ,
+        "Środkowy Dewon"@pl ,
+        "Devónico Médio"@pt ,
+        "stredný devón"@sk ,
+        "srednji devon"@sl ,
+        "mellersta devon"@sv ,
+        "中泥盆世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:MiddleJurassic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Jurassic ;
+    skos:definition "A time period with the following approximated bounds: older bound -174.1 +|-1.0 Ma, younger bound -163.5 +|-1.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Aalenian ,
+        isc:Bajocian ,
+        isc:Bathonian ,
+        isc:Callovian ;
+    skos:prefLabel
+        "Средна Юра"@bg ,
+        "Střední jura"@cs ,
+        "Mellem Jurassisk"@da ,
+        "Mittlerer Jura"@de ,
+        "Middle Jurassic"@en ,
+        "Jurásico Medio"@es ,
+        "Kesk-Juura"@et ,
+        "Keski-Jura"@fi ,
+        "Jurassique moyen"@fr ,
+        "középső-jura"@hu ,
+        "giurassico medio"@it ,
+        "中期ジュラ紀"@ja ,
+        "Vidurinė Jura"@lt ,
+        "Midden Jura"@nl ,
+        "Midtre jura"@no ,
+        "Środkowa Jura"@pl ,
+        "Jurássico Médio"@pt ,
+        "stredná jura"@sk ,
+        "srednja jura"@sl ,
+        "mellersta jura"@sv ,
+        "中侏罗世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:MiddleMississippian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Mississippian ;
+    skos:definition "A time period with the following approximated bounds: older bound -346.7 +|-0.4 Ma, younger bound -330.9 +|-0.2 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower isc:Visean ;
+    skos:prefLabel
+        "Middle Mississippian"@en ,
+        "中期ミシシッピアン紀"@ja ,
+        "中密西西比世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:MiddleOrdovician
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Ordovician ;
+    skos:definition "A time period with the following approximated bounds: older bound -470.0 +|-1.4 Ma, younger bound -458.4 +|-0.9 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Dapingian ,
+        isc:Darriwilian ;
+    skos:prefLabel
+        "Среден Ордовик"@bg ,
+        "Střední ordovik"@cs ,
+        "Mellem Ordovicium"@da ,
+        "Mittleres Ordovizium"@de ,
+        "Middle Ordovician"@en ,
+        "Ordovícico Medio"@es ,
+        "Kesk-Ordoviitsium"@et ,
+        "Keski-Ordoviikki"@fi ,
+        "Ordovicien moyen"@fr ,
+        "középső-ordovícium"@hu ,
+        "ordoviciano medio"@it ,
+        "中期オルドビス紀"@ja ,
+        "Vidurinis Ordovikas"@lt ,
+        "Midden Ordovicium"@nl ,
+        "Midtre ordovicium"@no ,
+        "Środkowy Ordowik"@pl ,
+        "Ordovícico Médio"@pt ,
+        "stredný ordovik"@sk ,
+        "srednji ordovicij"@sl ,
+        "mellersta ordovicium"@sv ,
+        "中奥陶世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:MiddlePennsylvanian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Pennsylvanian ;
+    skos:definition "A time period with the following approximated bounds: older bound -315.2 +|-0.2 Ma, younger bound -307 +|-0.1 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower isc:Moscovian ;
+    skos:prefLabel
+        "Middle Pennsylvanian"@en ,
+        "中期ペンシルバニア紀"@ja ,
+        "中宾夕法尼亚世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:MiddleTriassic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Triassic ;
+    skos:definition "A time period with the following approximated bounds: older bound -247.2 Ma, younger bound -237 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Anisian ,
+        isc:Ladinian ;
+    skos:prefLabel
+        "Среден Триаѿ"@bg ,
+        "Střední trias"@cs ,
+        "Mellem Triassisk"@da ,
+        "Mittlere Trias"@de ,
+        "Middle Triassic"@en ,
+        "Triásico Medio"@es ,
+        "Kesk-Triias"@et ,
+        "Keski-Trias"@fi ,
+        "Trias moyen"@fr ,
+        "középső-triász"@hu ,
+        "triassico medio"@it ,
+        "中期三畳紀"@ja ,
+        "Vidurinis Triasas"@lt ,
+        "Midden Trias"@nl ,
+        "Midtre trias"@no ,
+        "Środkowy Trias"@pl ,
+        "Triásico Médio"@pt ,
+        "stredný trias"@sk ,
+        "srednji trias"@sl ,
+        "mellersta trias"@sv ,
+        "中三叠世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Miocene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Neogene ;
+    skos:definition "A time period with the following approximated bounds: older bound -23.03 Ma, younger bound -5.333 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Aquitanian ,
+        isc:Burdigalian ,
+        isc:Langhian ,
+        isc:Messinian ,
+        isc:Serravallian ,
+        isc:Tortonian ;
+    skos:prefLabel
+        "Миоцен"@bg ,
+        "Miocén"@cs ,
+        "Miocæn"@da ,
+        "Miozän"@de ,
+        "Miocene"@en ,
+        "Mioceno"@es ,
+        "Miotseen"@et ,
+        "Mioseeni"@fi ,
+        "Miocène"@fr ,
+        "miocén"@hu ,
+        "miocene"@it ,
+        "中新世"@ja ,
+        "Miocenas"@lt ,
+        "Mioceen"@nl ,
+        "Miocen"@no ,
+        "Miocen"@pl ,
+        "Miocénico"@pt ,
+        "miocén"@sk ,
+        "miocen"@sl ,
+        "miocen"@sv ,
+        "中新世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Neoproterozoic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Proterozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -1000 Ma, younger bound -541.0 +|-1.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Cryogenian ,
+        isc:Ediacaran ,
+        isc:Tonian ;
+    skos:prefLabel
+        "пеопротерозой"@bg ,
+        "Neoproterozoikum"@cs ,
+        "Neoproterozoisk"@da ,
+        "Neoproterozoikum"@de ,
+        "Neoproterozoic"@en ,
+        "Neoproerozoico"@es ,
+        "Neoproterosoikum"@et ,
+        "Neoproterotsoikum"@fi ,
+        "Néoprotérozoïque"@fr ,
+        "neoproterozoikum"@hu ,
+        "neoproterozoico"@it ,
+        "原生代後期"@ja ,
+        "Neoproterozojus"@lt ,
+        "Neoproterozoïcum"@nl ,
+        "Neoproterozoikum"@no ,
+        "Neoproterozoik"@pl ,
+        "Neoproterozóico"@pt ,
+        "neoproterozoikum"@sk ,
+        "neoproterozoik"@sl ,
+        "neoproterozoikum"@sv ,
+        "新元古代"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Oligocene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleogene ;
+    skos:definition "A time period with the following approximated bounds: older bound -33.9 Ma, younger bound -23.03 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Chattian ,
+        isc:Rupelian ;
+    skos:prefLabel
+        "Олигоцен"@bg ,
+        "Oligocén"@cs ,
+        "Oligocæn"@da ,
+        "Oligozän"@de ,
+        "Oligocene"@en ,
+        "Oligoceno"@es ,
+        "Oligotseen"@et ,
+        "Oligoseeni"@fi ,
+        "Oligocène"@fr ,
+        "oligocén"@hu ,
+        "oligocene"@it ,
+        "漸新世"@ja ,
+        "Oligocenas"@lt ,
+        "Oliogoceen"@nl ,
+        "Oligocen"@no ,
+        "Oligocen"@pl ,
+        "Oligocénico"@pt ,
+        "oligocén"@sk ,
+        "oligocen"@sl ,
+        "oligocen"@sv ,
+        "渐新世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Paleocene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleogene ;
+    skos:definition "A time period with the following approximated bounds: older bound -66.0 Ma, younger bound -56 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Danian ,
+        isc:Selandian ,
+        isc:Thanetian ;
+    skos:prefLabel
+        "Палеоцен"@bg ,
+        "Paleocén"@cs ,
+        "Paleocæn"@da ,
+        "Paläozän"@de ,
+        "Paleocene"@en ,
+        "Palaeocene"@en-gb ,
+        "Paleocene"@en-us ,
+        "Paleoceno"@es ,
+        "Paleotseen"@et ,
+        "Paleoseeni"@fi ,
+        "Paléocène"@fr ,
+        "paleocén"@hu ,
+        "paleocene"@it ,
+        "暁新世"@ja ,
+        "Paleocenas"@lt ,
+        "Paleoceen"@nl ,
+        "Paleocen"@no ,
+        "Paleocen"@pl ,
+        "Paleocénico"@pt ,
+        "paleocén"@sk ,
+        "paleocen"@sl ,
+        "paleocen"@sv ,
+        "古新世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Paleoproterozoic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Proterozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -2500 Ma, younger bound -1600 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Orosirian ,
+        isc:Rhyacian ,
+        isc:Siderian ,
+        isc:Statherian ;
+    skos:prefLabel
+        "Палеопротерозой"@bg ,
+        "Paleoproterozoikum"@cs ,
+        "Palæoproterozoisk"@da ,
+        "Paläoproteroizoikum"@de ,
+        "Paleoproterozoic"@en ,
+        "Palaeoproterozoic"@en-gb ,
+        "Paleoproterozoic"@en-us ,
+        "Paleoproterozoico"@es ,
+        "Paleoproterosoikum"@et ,
+        "Paleoproterotsoikum"@fi ,
+        "Paléoprotérozoïque"@fr ,
+        "paleoproterozikum"@hu ,
+        "paleoproterozoico"@it ,
+        "原生代前期"@ja ,
+        "Paleoproterozojus"@lt ,
+        "paleoproterozoïcum"@nl ,
+        "Paleoproterozoikum"@no ,
+        "Paleoproterozoik"@pl ,
+        "Paleoproterozóico"@pt ,
+        "paleoproterozoikum"@sk ,
+        "paleoproterozoik"@sl ,
+        "paleoproterozoikum"@sv ,
+        "古元古代"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Pleistocene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Quaternary ;
+    skos:definition "A time period with the following approximated bounds: older bound -2.58 Ma, younger bound -0.0117 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Calabrian ,
+        isc:Gelasian ,
+        isc:MiddlePleistocene ,
+        isc:UpperPleistocene ;
+    skos:prefLabel
+        "Плейѿтоцен"@bg ,
+        "Pleistocén"@cs ,
+        "Pleistocæn"@da ,
+        "Pleistozän"@de ,
+        "Pleistocene"@en ,
+        "Pleistoceno"@es ,
+        "Pleistotseen"@et ,
+        "Pleistoseeni"@fi ,
+        "Pléistocène"@fr ,
+        "pleisztocén"@hu ,
+        "pleistocene"@it ,
+        "更新世"@ja ,
+        "Pleistocenas"@lt ,
+        "Pleistoceen"@nl ,
+        "Pleistocen"@no ,
+        "Plejstocen"@pl ,
+        "Plistocénico"@pt ,
+        "pleistocén"@sk ,
+        "pleistocen"@sl ,
+        "pleistocen"@sv ,
+        "更新世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Pliocene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Neogene ;
+    skos:definition "A time period with the following approximated bounds: older bound -5.333 Ma, younger bound -2.58 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Piacenzian ,
+        isc:Zanclean ;
+    skos:prefLabel
+        "Плиоцен"@bg ,
+        "Pliocén"@cs ,
+        "Pliocæn"@da ,
+        "Pliozän"@de ,
+        "Pliocene"@en ,
+        "Ploceno"@es ,
+        "Pliotseen"@et ,
+        "Plioseeni"@fi ,
+        "Pliocène"@fr ,
+        "pliocén"@hu ,
+        "pliocene"@it ,
+        "鮮新世"@ja ,
+        "Pliocenas"@lt ,
+        "Plioceen"@nl ,
+        "Pliocen"@no ,
+        "Pliocen"@pl ,
+        "Pliocénico"@pt ,
+        "pliocén"@sk ,
+        "pliocen"@sl ,
+        "pliocen"@sv ,
+        "上新世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Terreneuvian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cambrian ;
+    skos:definition "A time period with the following approximated bounds: older bound -541.0 +|-1.0 Ma, younger bound -521 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:CambrianStage2 ,
+        isc:Fortunian ;
+    skos:prefLabel
+        "Теренеув"@bg ,
+        "Terreneuv"@cs ,
+        "Terreneuvien"@da ,
+        "Terreneuvium"@de ,
+        "Terreneuvian"@en ,
+        "Terreneuviense"@es ,
+        "Terreneuvi"@et ,
+        "Terreneuv"@fi ,
+        "Terreneuvien"@fr ,
+        "terreneuvi"@hu ,
+        "terreneuviano"@it ,
+        "テレニュービアン世"@ja ,
+        "Tereniuvis"@lt ,
+        "Terreneuviën"@nl ,
+        "Terreneuvium"@no ,
+        "Terenew"@pl ,
+        "Terreneuviano"@pt ,
+        "terreneuv"@sk ,
+        "terreneuvij"@sl ,
+        "terreneuv"@sv ,
+        "纽芬兰世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:UpperCretaceous
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cretaceous ;
+    skos:definition "A time period with the following approximated bounds: older bound -100.5 Ma, younger bound -66.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Campanian ,
+        isc:Cenomanian ,
+        isc:Coniacian ,
+        isc:Maastrichtian ,
+        isc:Santonian ,
+        isc:Turonian ;
+    skos:prefLabel
+        "Къѿна Креда"@bg ,
+        "Pozdní křída"@cs ,
+        "Sen Kridt"@da ,
+        "Späte Kreide"@de ,
+        "Late Cretaceous"@en ,
+        "Hilis-Kriit"@et ,
+        "Myöhäis-Liitu"@fi ,
+        "késő-kréta"@hu ,
+        "後期白亜紀"@ja ,
+        "Vėlyva kreida"@lt ,
+        "Laat Krijt"@nl ,
+        "Sen kritt"@no ,
+        "Późna Kreda"@pl ,
+        "mladšia krieda"@sk ,
+        "pozna kreda"@sl ,
+        "yngre krita"@sv ,
+        "晚白垩世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:UpperDevonian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Devonian ;
+    skos:definition "A time period with the following approximated bounds: older bound -382.7 +|-1.6 Ma, younger bound -358.9 +|-0.4 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Famennian ,
+        isc:Frasnian ;
+    skos:prefLabel
+        "Къѿен Девон"@bg ,
+        "Svrchní devon"@cs ,
+        "Sen Devon"@da ,
+        "Spätes Devon"@de ,
+        "Late Devonian"@en ,
+        "Hilis-Devon"@et ,
+        "Myöhäis-Devoni"@fi ,
+        "késő-devon"@hu ,
+        "後期デボン紀"@ja ,
+        "Vėlyvasis Devonas"@lt ,
+        "Laat Devoon"@nl ,
+        "Sen devon"@no ,
+        "Późny Dewon"@pl ,
+        "mladší devón"@sk ,
+        "pozni devon"@sl ,
+        "yngre devon"@sv ,
+        "晚泥盆世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:UpperJurassic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Jurassic ;
+    skos:definition "A time period with the following approximated bounds: older bound -163.5 +|-1.0 Ma, younger bound -145.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Kimmeridgian ,
+        isc:Oxfordian ,
+        isc:Tithonian ;
+    skos:prefLabel
+        "Къѿна Юра"@bg ,
+        "Pozdní jura"@cs ,
+        "Sen Jurassisk"@da ,
+        "Später Jura"@de ,
+        "Late Jurassic"@en ,
+        "Hilis-Juura"@et ,
+        "Myöhäis-Jura"@fi ,
+        "késő-jura"@hu ,
+        "後期ジュラ紀"@ja ,
+        "Vėlyvoji Jura"@lt ,
+        "Laat Jura"@nl ,
+        "Sen jura"@no ,
+        "Późna Jura"@pl ,
+        "mladšia jura"@sk ,
+        "pozna jura"@sl ,
+        "yngre jura"@sv ,
+        "晚侏罗世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:UpperMississippian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Mississippian ;
+    skos:definition "A time period with the following approximated bounds: older bound -330.9 +|-0.2 Ma, younger bound -298.9 +|-0.15 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower isc:Serpukhovian ;
+    skos:prefLabel
+        "Late Mississippian"@en ,
+        "後期ミシシッピアン紀"@ja ,
+        "晚密西西比世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:UpperOrdovician
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Ordovician ;
+    skos:definition "A time period with the following approximated bounds: older bound -458.4 +|-0.9 Ma, younger bound -443.8 +|-1.5 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Hirnantian ,
+        isc:Katian ,
+        isc:Sandbian ;
+    skos:prefLabel
+        "Къѿен Ордовик"@bg ,
+        "Pozdní ordovik"@cs ,
+        "Sen Ordovicium"@da ,
+        "Spätes Ordovizium"@de ,
+        "Late Ordovician"@en ,
+        "Hilis-Ordoviitsium"@et ,
+        "Myöhäis-Ordoviikki"@fi ,
+        "késő-ordovícium"@hu ,
+        "後期オルドビス紀"@ja ,
+        "Vėlyvasis Ordovikas"@lt ,
+        "Laat Ordovicium"@nl ,
+        "Sen ordovicium"@no ,
+        "Późny Ordowik"@pl ,
+        "mladší ordovik"@sk ,
+        "starejši ordovicij"@sl ,
+        "yngre ordovicium"@sv ,
+        "晚奥陶世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:UpperPennsylvanian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Pennsylvanian ;
+    skos:definition "A time period with the following approximated bounds: older bound -307 +|-0.1 Ma, younger bound -298.9 +|-0.15 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Gzhelian ,
+        isc:Kasimovian ;
+    skos:prefLabel
+        "Къѿен Пенѿилван"@bg ,
+        "Pozdní pennsylván"@cs ,
+        "Sen Pennsylvanien"@da ,
+        "Spätes Pennsylvanium"@de ,
+        "Late Pennsylvanian"@en ,
+        "Hilis-Pennsylvania"@et ,
+        "Myöhäis-Pennsylvania"@fi ,
+        "késő-pennsylvaniai"@hu ,
+        "後期ペンシルバニア紀"@ja ,
+        "Vėlyvasis Pensilvanis"@lt ,
+        "Laat Pennsylvaniën"@nl ,
+        "Sen pennsylvanium"@no ,
+        "Późny Pensylwan"@pl ,
+        "mladší penssylván"@sk ,
+        "pozni pennsylvanij"@sl ,
+        "yngre pennsylvan"@sv ,
+        "晚宾夕法尼亚世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:UpperTriassic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Triassic ;
+    skos:definition "A time period with the following approximated bounds: older bound -237 Ma, younger bound -201.3 +|-0.2 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Carnian ,
+        isc:Norian ,
+        isc:Rhaetian ;
+    skos:prefLabel
+        "Къѿен Триаѿ"@bg ,
+        "Pozdní trias"@cs ,
+        "Sen Triassisk"@da ,
+        "Späte Trias"@de ,
+        "Late Triassic"@en ,
+        "Hilis-Triias"@et ,
+        "Myöhäis-Trias"@fi ,
+        "késő-triász"@hu ,
+        "後期三畳紀"@ja ,
+        "Vėlyvasis Triasas"@lt ,
+        "Laat Trias"@nl ,
+        "Sen trias"@no ,
+        "Późny Trias"@pl ,
+        "mladší trias"@sk ,
+        "pozni trias"@sl ,
+        "yngre trias"@sv ,
+        "晚三叠世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Wenlock
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Silurian ;
+    skos:definition "A time period with the following approximated bounds: older bound -433.4 +|-0.8 Ma, younger bound -427.4 +|-0.5 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Homerian ,
+        isc:Sheinwoodian ;
+    skos:prefLabel
+        "Венлок"@bg ,
+        "Wenlock"@cs ,
+        "Wenlock"@da ,
+        "Wenlock"@de ,
+        "Wenlock"@en ,
+        "Wenlock"@es ,
+        "Wenlock"@et ,
+        "Wenlock"@fi ,
+        "Wenlock"@fr ,
+        "wenlocki"@hu ,
+        "wenlockiano"@it ,
+        "ウェンロッキアン世"@ja ,
+        "Uenlokis"@lt ,
+        "Wenlock"@nl ,
+        "Welnlock"@no ,
+        "Wenlok"@pl ,
+        "Wenlock"@pt ,
+        "wenlock"@sk ,
+        "wenlockij"@sl ,
+        "wenlock"@sv ,
+        "温洛克世"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Carboniferous
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -358.9 +|-0.4 Ma, younger bound -298.9 +|-0.15 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Mississippian ,
+        isc:Pennsylvanian ;
+    skos:prefLabel
+        "Карбон"@bg ,
+        "Karbon"@cs ,
+        "Karbon"@da ,
+        "Karbon"@de ,
+        "Carboniferous"@en ,
+        "Carbonífero"@es ,
+        "Karbon"@et ,
+        "Kivihiili"@fi ,
+        "Carbonifère"@fr ,
+        "karbon"@hu ,
+        "carbonifero"@it ,
+        "石炭紀"@ja ,
+        "Karbonas"@lt ,
+        "Carboon"@nl ,
+        "Karbon"@no ,
+        "Karbon"@pl ,
+        "Carbónico"@pt ,
+        "karbón"@sk ,
+        "karbon"@sl ,
+        "karbon"@sv ,
+        "石炭纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Cenozoic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Phanerozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -66.0 Ma, younger bound -0.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Neogene ,
+        isc:Paleogene ,
+        isc:Quaternary ;
+    skos:prefLabel
+        "пеозой"@bg ,
+        "Kenozoikum"@cs ,
+        "Kænozoisk"@da ,
+        "Känozoikum"@de ,
+        "Cenozoic"@en ,
+        "Cainozoic"@en-gb ,
+        "Cenozoic"@en-us ,
+        "Cenozoico"@es ,
+        "Kainosoikum"@et ,
+        "Kenotsoikum"@fi ,
+        "Cénozoïque"@fr ,
+        "kainozoikum"@hu ,
+        "cenozoico"@it ,
+        "新生代"@ja ,
+        "Cenozojus"@lt ,
+        "Kaenozoïcum"@nl ,
+        "Kenozoikum"@no ,
+        "Kenozoik"@pl ,
+        "Cenozóico"@pt ,
+        "kenozoikum"@sk ,
+        "kenozoik"@sl ,
+        "kenozoikum"@sv ,
+        "新生代"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Cretaceous
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Mesozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -145.0 Ma, younger bound -66.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:LowerCretaceous ,
+        isc:UpperCretaceous ;
+    skos:prefLabel
+        "Креда"@bg ,
+        "Křída"@cs ,
+        "Kridt"@da ,
+        "Kreide"@de ,
+        "Cretaceous"@en ,
+        "Cretácico"@es ,
+        "Kriit"@et ,
+        "Liitu"@fi ,
+        "Crétacé"@fr ,
+        "kréta"@hu ,
+        "cretacico"@it ,
+        "白亜紀"@ja ,
+        "Kreida"@lt ,
+        "Krijt"@nl ,
+        "Kritt"@no ,
+        "Kreda"@pl ,
+        "Cretácico"@pt ,
+        "krieda"@sk ,
+        "kreda"@sl ,
+        "krita"@sv ,
+        "白垩纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Mesozoic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Phanerozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -251.902 +|-0.024 Ma, younger bound -66.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Cretaceous ,
+        isc:Jurassic ,
+        isc:Triassic ;
+    skos:prefLabel
+        "Мезозой"@bg ,
+        "Mezozoikum"@cs ,
+        "Mesozoisk"@da ,
+        "Mesozoikum"@de ,
+        "Mesozoic"@en ,
+        "Mesozoico"@es ,
+        "Mesosoikum"@et ,
+        "Mesotsoikum"@fi ,
+        "Mésozoïque"@fr ,
+        "mezozoikum"@hu ,
+        "mesozoico"@it ,
+        "中生代"@ja ,
+        "Mezozojus"@lt ,
+        "Mesozoïcum"@nl ,
+        "Mesozoikum"@no ,
+        "Mezozoik"@pl ,
+        "Mesozóico"@pt ,
+        "mezozoikum"@sk ,
+        "mezozoik"@sl ,
+        "mesozoikum"@sv ,
+        "中生代"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Neogene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cenozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -23.03 Ma, younger bound -2.58 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Miocene ,
+        isc:Pliocene ;
+    skos:prefLabel
+        "пеоген"@bg ,
+        "Neogén"@cs ,
+        "Neogen"@da ,
+        "Neogen"@de ,
+        "Neogene"@en ,
+        "Neógeno"@es ,
+        "Neogeen"@et ,
+        "Neogeeni"@fi ,
+        "Néogène"@fr ,
+        "neogén"@hu ,
+        "neogene"@it ,
+        "新第三紀"@ja ,
+        "Neogenas"@lt ,
+        "Neogeen"@nl ,
+        "Neogen"@no ,
+        "Neogen"@pl ,
+        "Neogénico"@pt ,
+        "neogén"@sk ,
+        "neogen"@sl ,
+        "neogen"@sv ,
+        "晚第三纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Proterozoic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Precambrian ;
+    skos:definition "A time period with the following approximated bounds: older bound -2500 Ma, younger bound -541.0 +|-1.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Mesoproterozoic ,
+        isc:Neoproterozoic ,
+        isc:Paleoproterozoic ;
+    skos:prefLabel
+        "Протерозой"@bg ,
+        "Proterozoikum"@cs ,
+        "Proterozoikum"@da ,
+        "Proterozoikum"@de ,
+        "Proterozoic"@en ,
+        "Proterozoico"@es ,
+        "Proterosoikum"@et ,
+        "Proterotsoikum"@fi ,
+        "Protérozoïque"@fr ,
+        "proterozoos"@hu ,
+        "proterozoico"@it ,
+        "原生代"@ja ,
+        "Proterozojus"@lt ,
+        "Proterozoïcum"@nl ,
+        "Proterozoisk"@no ,
+        "Proterozoik"@pl ,
+        "Proterozóico"@pt ,
+        "proterozoikum"@sk ,
+        "proterozoik"@sl ,
+        "proterozoikum"@sv ,
+        "元古宙"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Quaternary
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cenozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -2.58 Ma, younger bound -0.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Holocene ,
+        isc:Pleistocene ;
+    skos:prefLabel
+        "Кватернер"@bg ,
+        "Kvartér"@cs ,
+        "Kvartær"@da ,
+        "Quartär"@de ,
+        "Quaternary"@en ,
+        "Cuaternario"@es ,
+        "Kvaternaar"@et ,
+        "Kvartääri"@fi ,
+        "Quaternaire"@fr ,
+        "negyedidőszak"@hu ,
+        "quaternario"@it ,
+        "第四紀"@ja ,
+        "Kvarteras"@lt ,
+        "Kwartair"@nl ,
+        "Kvartær"@no ,
+        "Czwartorzęd"@pl ,
+        "Quaternário"@pt ,
+        "kvartér"@sk ,
+        "kvartar"@sl ,
+        "kvartär"@sv ,
+        "第四纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Devonian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -419.2 +|-3.2 Ma, younger bound -358.9 +|-0.4 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:LowerDevonian ,
+        isc:MiddleDevonian ,
+        isc:UpperDevonian ;
+    skos:prefLabel
+        "Девон"@bg ,
+        "Devon"@cs ,
+        "Devon"@da ,
+        "Devon"@de ,
+        "Devonian"@en ,
+        "Devónico"@es ,
+        "Devon"@et ,
+        "Devoni"@fi ,
+        "Dévonien"@fr ,
+        "devon"@hu ,
+        "devoniano"@it ,
+        "デボン紀"@ja ,
+        "Devonas"@lt ,
+        "Devoon"@nl ,
+        "Devon"@no ,
+        "Dewon"@pl ,
+        "Devónico"@pt ,
+        "devón"@sk ,
+        "devon"@sl ,
+        "devon"@sv ,
+        "泥盆纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Jurassic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Mesozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -201.3 +|-0.2 Ma, younger bound -145.0 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:LowerJurassic ,
+        isc:MiddleJurassic ,
+        isc:UpperJurassic ;
+    skos:prefLabel
+        "Юра"@bg ,
+        "Jura"@cs ,
+        "Jurassisk"@da ,
+        "Jura"@de ,
+        "Jurassic"@en ,
+        "Jurásico"@es ,
+        "Juura"@et ,
+        "Jura"@fi ,
+        "Jurassique"@fr ,
+        "jura"@hu ,
+        "giurassico"@it ,
+        "ジュラ紀"@ja ,
+        "Jura"@lt ,
+        "Jura"@nl ,
+        "Jura"@no ,
+        "Jura"@pl ,
+        "Jurássico"@pt ,
+        "jura, jurský"@sk ,
+        "jura"@sl ,
+        "jura"@sv ,
+        "侏罗纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Mississippian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Carboniferous ;
+    skos:definition "A time period with the following approximated bounds: older bound -358.9 +|-0.4 Ma, younger bound -323.2 +|-0.4 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:LowerMississippian ,
+        isc:MiddleMississippian ,
+        isc:UpperMississippian ;
+    skos:prefLabel
+        "Миѿиѿип"@bg ,
+        "Mississip"@cs ,
+        "Mississippien"@da ,
+        "Mississippium"@de ,
+        "Mississippian"@en ,
+        "Mississippiense"@es ,
+        "Mississippi"@et ,
+        "Mississippi"@fi ,
+        "Mississippien"@fr ,
+        "mississippi"@hu ,
+        "mississippiano"@it ,
+        "ミシシッピアン紀"@ja ,
+        "Misisipis"@lt ,
+        "Mississippiën"@nl ,
+        "Mississippium"@no ,
+        "Missisip"@pl ,
+        "Mississipiano"@pt ,
+        "mississip"@sk ,
+        "mississippij"@sl ,
+        "mississippi"@sv ,
+        "密西西比亚纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Ordovician
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -485.4 +|-1.9 Ma, younger bound -443.8 +|-1.5 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:LowerOrdovician ,
+        isc:MiddleOrdovician ,
+        isc:UpperOrdovician ;
+    skos:prefLabel
+        "Ордовик"@bg ,
+        "Ordovik"@cs ,
+        "Ordovicium"@da ,
+        "Ordovizium"@de ,
+        "Ordovician"@en ,
+        "Ordovícico"@es ,
+        "Ordoviitsium"@et ,
+        "Ordoviikki"@fi ,
+        "Ordovicien"@fr ,
+        "ordovícium"@hu ,
+        "ordoviciano"@it ,
+        "オルドビス紀"@ja ,
+        "Ordovikas"@lt ,
+        "Ordovicium"@nl ,
+        "Ordovicium"@no ,
+        "Ordowik"@pl ,
+        "Ordovícico"@pt ,
+        "ordovik"@sk ,
+        "ordovicij"@sl ,
+        "ordovicium"@sv ,
+        "奥陶纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Paleogene
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Cenozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -66.0 Ma, younger bound -23.03 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Eocene ,
+        isc:Oligocene ,
+        isc:Paleocene ;
+    skos:prefLabel
+        "Палеоген"@bg ,
+        "Paleogén"@cs ,
+        "Palæogen"@da ,
+        "Paläogen"@de ,
+        "Paleogene"@en ,
+        "Palaeogene"@en-gb ,
+        "Paleogene"@en-us ,
+        "Paleógeno"@es ,
+        "Paleogeen"@et ,
+        "Paleogeeni"@fi ,
+        "Paléogène"@fr ,
+        "paleogén"@hu ,
+        "paleogene"@it ,
+        "古第三紀"@ja ,
+        "Paleogenas"@lt ,
+        "Paleogeen"@nl ,
+        "Paleogen"@no ,
+        "Paleogen"@pl ,
+        "Paleogénico"@pt ,
+        "paleogén"@sk ,
+        "paleogen"@sl ,
+        "paleogen"@sv ,
+        "早第三纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Pennsylvanian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Carboniferous ;
+    skos:definition "A time period with the following approximated bounds: older bound -323.2 +|-0.4 Ma, younger bound -298.9 +|-0.15 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:LowerPennsylvanian ,
+        isc:MiddlePennsylvanian ,
+        isc:UpperPennsylvanian ;
+    skos:prefLabel
+        "Пенѿилван"@bg ,
+        "Pennsylván"@cs ,
+        "Pennsylvanien"@da ,
+        "Pennsylvanium"@de ,
+        "Pennsylvanian"@en ,
+        "Pennsylvaniense"@es ,
+        "Pennsylvania"@et ,
+        "Pennsylvania"@fi ,
+        "Pennsylvanien"@fr ,
+        "pennsylvaniai"@hu ,
+        "pennsylvaniano"@it ,
+        "ペンシルバニア紀"@ja ,
+        "Pensilvanis"@lt ,
+        "Pennsylvaniën"@nl ,
+        "Pennsylvanium"@no ,
+        "Pensylwan"@pl ,
+        "Pensilvaniano"@pt ,
+        "penssylván"@sk ,
+        "pennsylvanij"@sl ,
+        "pennsylvan"@sv ,
+        "宾夕法尼亚亚纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Permian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -298.9 +|-0.15 Ma, younger bound -251.902 +|-0.024 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Cisuralian ,
+        isc:Guadalupian ,
+        isc:Lopingian ;
+    skos:prefLabel
+        "Перм"@bg ,
+        "Perm"@cs ,
+        "Perm"@da ,
+        "Perm"@de ,
+        "Permian"@en ,
+        "Pérmico"@es ,
+        "Perm"@et ,
+        "Permi"@fi ,
+        "Permien"@fr ,
+        "perm"@hu ,
+        "permiano"@it ,
+        "ペルム紀"@ja ,
+        "Permas"@lt ,
+        "Perm"@nl ,
+        "Perm"@no ,
+        "Perm"@pl ,
+        "Pérmico"@pt ,
+        "perm"@sk ,
+        "perm"@sl ,
+        "perm"@sv ,
+        "二叠纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Silurian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -443.8 +|-1.5 Ma, younger bound -419.2 +|-3.2 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Llandovery ,
+        isc:Ludlow ,
+        isc:Pridoli ,
+        isc:Wenlock ;
+    skos:prefLabel
+        "Силур"@bg ,
+        "Silur"@cs ,
+        "Silur"@da ,
+        "Silur"@de ,
+        "Silurian"@en ,
+        "Silúrcio"@es ,
+        "Silur"@et ,
+        "Siluuri"@fi ,
+        "Silurien"@fr ,
+        "szilur"@hu ,
+        "siluriano"@it ,
+        "シルル紀"@ja ,
+        "Silūras"@lt ,
+        "Siluur"@nl ,
+        "Silur"@no ,
+        "Sylur"@pl ,
+        "Silúrico"@pt ,
+        "silúr"@sk ,
+        "silur"@sl ,
+        "silur"@sv ,
+        "志留纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Triassic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Mesozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -251.902 +|-0.024 Ma, younger bound -201.3 +|-0.2 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:LowerTriassic ,
+        isc:MiddleTriassic ,
+        isc:UpperTriassic ;
+    skos:prefLabel
+        "Триаѿ"@bg ,
+        "Trias"@cs ,
+        "Triassisk"@da ,
+        "Trias"@de ,
+        "Triassic"@en ,
+        "Triásico"@es ,
+        "Triias"@et ,
+        "Trias"@fi ,
+        "Trias"@fr ,
+        "triász"@hu ,
+        "triassico"@it ,
+        "三畳紀"@ja ,
+        "Triasas"@lt ,
+        "Trias"@nl ,
+        "Trias"@no ,
+        "Trias"@pl ,
+        "Triásico"@pt ,
+        "trias"@sk ,
+        "trias"@sl ,
+        "trias"@sv ,
+        "三叠纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Cambrian
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Paleozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -541.0 +|-1.0 Ma, younger bound -485.4 +|-1.9 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:CambrianSeries2 ,
+        isc:Furongian ,
+        isc:Miaolingian ,
+        isc:Terreneuvian ;
+    skos:prefLabel
+        "Камбрий"@bg ,
+        "Kambrium"@cs ,
+        "Kambrium"@da ,
+        "Kambrium"@de ,
+        "Cambrian"@en ,
+        "Cámbrico"@es ,
+        "Kambrium"@et ,
+        "Kambri"@fi ,
+        "Cambrien"@fr ,
+        "kambriumi"@hu ,
+        "cambriano"@it ,
+        "カンブリア紀"@ja ,
+        "Kambras"@lt ,
+        "Cambrium"@nl ,
+        "Cambrium"@no ,
+        "Kambr"@pl ,
+        "Câmbrico"@pt ,
+        "kambrium"@sk ,
+        "kambrij"@sl ,
+        "kambrium"@sv ,
+        "寒武纪"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
+
+isc:Paleozoic
+    a skos:Concept ;
+    rdfs:isDefinedBy ts:gts2020 ;
+    skos:broader isc:Phanerozoic ;
+    skos:definition "A time period with the following approximated bounds: older bound -541.0 +|-1.0 Ma, younger bound -251.902 +|-0.024 Ma" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        isc:Cambrian ,
+        isc:Carboniferous ,
+        isc:Devonian ,
+        isc:Ordovician ,
+        isc:Permian ,
+        isc:Silurian ;
+    skos:prefLabel
+        "Палеозой"@bg ,
+        "Paleozoikum"@cs ,
+        "Palæozoisk"@da ,
+        "Paläozoikum"@de ,
+        "Paleozoic"@en ,
+        "Palaeozoic"@en-gb ,
+        "Paleozoic"@en-us ,
+        "Palozoico"@es ,
+        "Paleosoikum"@et ,
+        "Paleotsoikum"@fi ,
+        "Paléozoïque"@fr ,
+        "paleozoikum"@hu ,
+        "paleozoico"@it ,
+        "古生代"@ja ,
+        "Paleozojus"@lt ,
+        "Paleozoïcum"@nl ,
+        "Paleozoikum"@no ,
+        "Paleozoik"@pl ,
+        "Paleozóico"@pt ,
+        "paleozoikum"@sk ,
+        "paleozoik"@sl ,
+        "paleozoikum"@sv ,
+        "古生代"@zh ;
+    prov:wasDerivedFrom ts:gts2020 ;
+.
