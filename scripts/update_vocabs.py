@@ -66,8 +66,8 @@ def add_vocabs(vocabs: List[str], local_vocabs: Dict[str, str]):
         add_graph(vocab, local_vocabs[vocab])
 
     # add all local graphs to default
-    for vocab in list(local_vocabs.keys()):
-        add_to_default(vocab)
+    # for vocab in list(local_vocabs.keys()):
+    #     add_to_default(vocab)
 
 
 def delete_vocabs(vocabs: List[str]):
@@ -75,7 +75,7 @@ def delete_vocabs(vocabs: List[str]):
     deletes vocabs flagged for deletion."""
 
     # drop default graph
-    sparql_update("DROP DEFAULT")
+    # sparql_update("DROP DEFAULT")
 
     # drop vocab
     for vocab in vocabs:
@@ -292,8 +292,8 @@ def get_modified_vocabs(local_vocabs: Dict[str, str]) -> List[str]:
         # accounts for bnodes
         g_local_str = to_isomorphic(g_local).serialize(format="turtle")
         # tags that get omitted in remote version
-        g_local_str = g_local_str.replace("@en", "")
-        g_local_str = g_local_str.replace("^^xsd:string", "")
+        # g_local_str = g_local_str.replace("@en", "")
+        # g_local_str = g_local_str.replace("^^xsd:string", "")
         # re-parsed as namespace order is not guaranteed
         local = Graph().parse(data=g_local_str, format="turtle")
 
